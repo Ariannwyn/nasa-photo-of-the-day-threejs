@@ -36,7 +36,10 @@ function App() {
           })
         }
       })
-      .catch(error => console.log("data was not returned", error))
+      .catch(error => {
+        console.log("data was not returned", error)
+        setImage("https://image.freepik.com/free-vector/funny-error-404-background-design_1167-219.jpg");
+      })
   }, []);
   
   return (
